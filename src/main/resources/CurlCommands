@@ -1,0 +1,35 @@
+API to get ShortUrl
+
+curl --location --request POST 'http://localhost:9092/ShortenUrl' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "request":"www.poojasharma.com",
+    "user":"priti"
+}
+'
+
+{
+    "request":"https://www.workday.com",
+    "user":"renu"
+}
+
+
+Taken care of:
+0) The url is valid or not
+1) The ShortUrl is of length 5
+2) If given the same URL multiple times , it will return same tiny URL again
+*************************************************************************************************
+API to get All ShortenUrl
+curl --location --request GET 'http://localhost:9092/allShorterUrl' \
+--data-raw ''
+
+**********************************************************************************************
+API to get LongURL when the input is SHortUrl
+
+curl --location --request POST 'http://localhost:9092/completeURL' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "request":"www.tinyurl.com/n3wDb",
+    "user":"renu"
+}'
+****************************************************************************************************
