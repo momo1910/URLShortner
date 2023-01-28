@@ -3,9 +3,13 @@ URL Shortner Mini Project
 
 Hi this URL shortner Project (a Spring boot Project)
 
-Framweork used : Spring boot 
-languages : Java 8
-Tools : MS sql 
+Framweork used : Rest Web Client , JPA , Hibernate, SQL Driver 
+
+ languages : Java 8
+
+Tools : Postman
+
+Database : MS SQL Server
 
 The Project has the followng REST API
 1) To get the Short URL for the Requested/Long URL 
